@@ -1,7 +1,7 @@
 <?php
 $amount = '1'; //Amount to transact 
 $phonenuber = '07xxxxxxx'; // Phone number paying
-$Account_no = 'UMESKIA SOFTWARES'; // Enter account number optional
+$Account_no = 'JONAH-TECH SOLUTIONS'; // Enter account number optional
 $url = 'https://tinypesa.com/api/v1/express/initialize';
 $data = array(
     'amount' => $amount,
@@ -10,7 +10,7 @@ $data = array(
 );
 $headers = array(
     'Content-Type: application/x-www-form-urlencoded',
-    'ApiKey: RLyaVXpqEx9' // Replace with your api key
+    'ApiKey: QLyaVXqwEx4' // Replace with your api key
  );
 $info = http_build_query($data);
 
@@ -28,7 +28,7 @@ if($msg_resp ->success == 'true'){
 }
 echo 'Transaction Completed  successfully. Now redirecting...';
   
-  header("Location: https://placid.co.ke/");
+  header("Location: https://example.co.ke/");
 
 ?>
 
